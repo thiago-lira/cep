@@ -1,0 +1,18 @@
+{
+  "name": "cep",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Thiago Lira <lira_thiago@msn.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "concurrently \"http-server ./public\" \"npm run build:dev\"",
+    "build:dev": "node esbuild-dev.js"
+  },
+  "devDependencies": {
+    "concurrently": "^7.0.0",
+    "esbuild": "^0.14.27",
+    "eslint": "^8.11.0",
+    "http-server": "^14.1.0",
+    "jest": "^27.5.1"
+  }
+}
